@@ -53,3 +53,20 @@ alias urlencode='python -c "import sys, urllib as ul; print ul.quote_plus(sys.ar
 
 # Managing dotfiles
 alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+
+# Managing databases
+alias mysql_start='brew services start mysql'
+alias mysql_stop='brew services stop mysql'
+alias mysql_restart='brew services restart mysql'
+
+alias psql_start='brew services start postgresql'
+alias psql_stop='brew services stop postgresql'
+alias psql_restart='brew services restart postgresql'
+
+alias redis_start='brew services start redis'
+alias redis_stop='brew services stop redis'
+alias redis_restart='brew services restart redis'
+
+alias memcached_start='brew services start memcached'
+alias memcached_stop='brew services stop memcached'
+alias memcached_restart='brew services restart memcached'
