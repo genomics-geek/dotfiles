@@ -20,9 +20,9 @@ alias mv='mv -iv'
 alias rm='rm -iv'
 alias mkdir='mkdir -pv'
 alias ls="command ls ${colorflag}"
-alias l="ls -lF ${colorflag}"
-alias la="ls -lAF ${colorflag}"
-alias lsd="ls -lF ${colorflag} | grep --color=never '^d'"
+alias l="ls -lhF ${colorflag}"
+alias la="ls -lhAF ${colorflag}"
+alias lsd="ls -lhF ${colorflag} | grep --color=never '^d'"
 alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
