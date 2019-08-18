@@ -18,6 +18,11 @@ function set_ssh_authkey() {
 	pubkey | ssh "$@" 'cat >> .ssh/authorized_keys'
 }
 
+# Shortcut to search history
+function search_history() {
+	history | grep "$@"
+}
+
 # Install python package globally when using pyenv
 gpip(){
     PIP_REQUIRE_VIRTUALENV="" pip "$@"
