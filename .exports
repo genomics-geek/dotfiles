@@ -41,3 +41,4 @@ export JENV="$HOME/.jenv"
 
 export PLENV="$HOME/.plenv"
 export PIP_REQUIRE_VIRTUALENV=true
+export PYENV_VIRTUALENV_DISABLE_PROMPT=1
