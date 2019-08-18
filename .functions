@@ -13,6 +13,11 @@ function tre() {
 	tree -aC -I '.git|node_modules|bower_components' --dirsfirst "$@" | less -FRNX;
 }
 
+# Shortcut to create a public key
+function set_ssh_authkey() {
+	pubkey | ssh "$@" 'cat >> .ssh/authorized_keys'
+}
+
 # Install python package globally when using pyenv
 gpip(){
     PIP_REQUIRE_VIRTUALENV="" pip "$@"

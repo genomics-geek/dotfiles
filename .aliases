@@ -70,3 +70,6 @@ alias redis_restart='brew services restart redis'
 alias memcached_start='brew services start memcached'
 alias memcached_stop='brew services stop memcached'
 alias memcached_restart='brew services restart memcached'
+
+# Public key shortcuts
+alias pubkey='cat $HOME/.ssh/id_rsa.pub'
