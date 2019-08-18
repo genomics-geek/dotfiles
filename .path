@@ -1,1 +1,10 @@
+#!/usr/bin/env bash
+
 export PATH="/usr/local/bin:/usr/local/sbin:~/bin:$GOPATH/bin:$JENV/bin:$PLENV/bin:$PYENV/bin:$PATH"
+
+# Virtualenvs
+if which pyenv > /dev/null ; then eval "$(pyenv init -)"; fi
+eval "$(pyenv virtualenv-init -)"
+test -f /usr/local/bin/virtualenvwrapper.sh && source /usr/local/bin/virtualenvwrapper.sh
+eval "$(jenv init -)"
+eval "$(plenv init -)"
