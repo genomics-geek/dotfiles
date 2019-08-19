@@ -8,3 +8,4 @@ eval "$(pyenv virtualenv-init -)"
 test -f /usr/local/bin/virtualenvwrapper.sh && source /usr/local/bin/virtualenvwrapper.sh
 eval "$(jenv init -)"
 eval "$(plenv init -)"
+eval "$(direnv hook bash)"
